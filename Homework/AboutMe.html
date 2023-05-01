@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>About Me</title>
+</head>
+
+<body>
+  
+  <header id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary py-3">
+      <div class="container">
+        <div class="shared">
+          <div class="container">
+              <div class="col-md-6">
+              </div>
+      
+              <div class="col-md-6">
+                <a href="index.html">
+                  <img src="dc17a7235a0f06779198dbc0840dada2.jpeg" width="50">
+                </a>
+              </div>
+          </div>
+      </div>
+      <a class="navbar-brand" href="#">Fatih Aydın</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" aria-current="page" href="#">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="AboutMe.html" target="_self" >About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Portfolio.html" target="_self">Portfolio</a>
+          </li>
+          <li class="nav-item">
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Sign Up
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        
+                        <body class="text-center">
+    
+                          <main class="form-signin w-100 m-auto">
+                            <form>
+                              <img class="mb-4" src="dc17a7235a0f06779198dbc0840dada2.jpeg" alt="" width="72" height="57">
+                              <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
+                          
+                              <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                <label for="floatingInput">Email address</label>
+                              </div>
+                              <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                              </div>
+                              <p class="mt-5 mb-3 text-muted">© 2022</p>
+                              <button class="w-100 btn btn-lg btn-secondary" type="submit">Sign up</button>  <!--here I connected my sign up button with the modal. 
+                                I changed the structure of the modal and content of the sign up  bootstrap model-->
+                            </form>
+                          </main>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="box" style="width: 350px; height: 30px; border: black; background-color: rgb(108, 117, 125); margin: 20px; position: relative; left: 20px;">
+  <h7 style="font-family: helvetica;">
+    <strong>
+    MOST FREQUENTLY ASKED QUESTIONS
+  </strong>
+
+  </h7>
+
+
+
+</div>
+
+<div class="accordion" id="accordionExample"><!--Soru cevap kısmımı aaccordion özelliğiyle yapmak istedim fakat bootstrapten aldığımda ilk a
+accordion çalışmıyordu ve üç tane accordion vardı. Bunları değiştirip sayıları arttırdığım ve en aşağı kısımda bazı css kodlarıyla background colorlarını 
+düzenledim.-->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        1-) Science is complex. Where does linear algebra fit in, and why is it considered indispensable?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>From the life sciences to engineering and information networks, scientists are generating inconceivable amounts of data.</strong> Magnetic resonance scans produce millions of images; microarrays span entire genomes; the Internet is an enormous graph. The goal is to find structure: we need a language that can manipulate and make sense of the information. Linear algebra is very often the right language, and it deals well with the structure it finds.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        2-) What discovery spurred your interest in applied mathematics?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>The finite element method of solving partial differential equations.</strong> That was a major moment for me. It was a new way to solve differential equations using simple trial functions. In the early 1970s, engineers and scientists were writing huge software packages using the finite element method to solve structural problems, computing forces and stresses. The finite element method is used all of the time now in solid and fluid mechanics, to design airplanes, and to model the heart. That opened my eyes, and I realized that the world of mathematical applications was exciting. My first book was about the mathematical foundations of finite elements.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        3-) How did SIAM help you envision how to better promote these applications?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>The SIAM community showed me that the way we were teaching linear algebra was divorced from its applications.</strong> While president [1999–2000], I worked to make new connections. There is now a SIAM activity group on imaging, one on life sciences, and the largest is on computational science. Because of these connections, members have become more actively involved in issues that affect society. For example, SIAM members contributed to tracking and predicting the spread of oil spilled into the Gulf of Mexico in the spring of 2010.
+      </div>
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingFour">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+      4-) Your linear algebra textbook and online lectures have become a sensation among international and American students alike. Why, do you suppose?
+    </button>
+  </h2>
+  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <strong>My work on finite elements helped me realize that the tools of linear algebra were for everybody, although we weren’t teaching it that way. Changing that was my lifework.</strong> The first step was to create a more applied version of a small linear algebra class that had been mostly taught to math majors. This new class caught on immediately with science and engineering students, and not just at MIT. The textbook and the videos came out of this course, and MIT’s new initiative (OpenCourseWare) videotaped classes and put them online so that everyone could learn. I’m not sure why viewers like the videos. I think one part is that it’s the real course, not some TV program that is heavy on flashy graphics. Moving linear algebra from theory into practice brings in a much wider audience. There is still a place for instructors who are teaching directly and personally a subject they are excited about. Maybe that comes through in the videos. At least, I hope so.
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingFive">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+      5-) What does the future of applied mathematics look like from where you stand?
+    </button>
+  </h2>
+  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <strong>Applications to the life sciences are exploding. Information networks are too—models of those networks show up everywhere, from neural maps to the Internet.</strong> Pure and applied mathematics both contribute to our understanding of these fields. Science and mathematics make for a wonderful life. You’re working with people who are doing their best to solve problems. It is not easy, and that makes it exciting. When they succeed, it’s great for everybody.
+    </div>
+  </div>
+</div>
+
+
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <nav id="nav-bar">
+      <div class="box" style="width: 350px; height: 30px; border: black; background-color: rgb(108, 117, 125); margin: 20px; position: relative; left: 20px;">
+        <h4 style="font-family: helvetica;"><strong>You can look my resume</strong> 
+          <a href="My Resume.pdf" target="_blank" >here</a> <!--Burada href koduyla pdf imin açılmasını sağladım.
+          Target tarafına _blank ekleyerek ayrı bir sekmede açılmasını sağladım-->
+        </h4>
+
+        <div class="box" style="width: 1470px; height: 250px; border: black; background-color: rgb(108, 117, 125); margin: 20px; position: relative; right: 20px;">
+          <h1>MY HOBBIES AND INTERESTS</h1>
+          <ol type="I">     <!-- I made ordered list that puts a number on the starting of the list -->
+            <li><h6>Math</h6></li>
+            <li><h6>Science</h6></li>
+            <li><h6>Physical educatin</h6></li>
+            <li><h6>Wavelets</h6></li>
+            <li><h6>GPS</h6></li>
+            <li><h6>Calculus</h6></li>
+          </ol>
+        
+          <div class="box" style="width: 1470px; height: 250px; border: black; background-color: rgb(108, 117, 125); margin: 20px; position: relative; right: 20px; top: 90px;"> <!--I designed my box with some css codes via style and I emphasized my research interest -->
+            <h1>MY RESEARCH INTERESTS</h1>
+            <ul>   <!-- I made unordered list in here with 'ul' type code-->
+              <li><h6>Mathematical analysis, linear algebra and PDEs</h6></li>
+              <li><h6>Computational science</h6></li>
+              <li><h6>Finite elements</h6></li>
+              <li><h6>turkish</h6></li>
+            </ul>
+
+
+            <div class="box" style="width: 1470px; height: 250px; border: black; margin: 20px; position: relative; right: 20px; top: 150px;">
+</body>
+<footer>
+  <div class="footer bg-secondary">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <div class="container">
+        <span><a href="https://www.twitter.com" style="color: rgb(29, 161, 242);" target="_blank"><i class="fab fa-twitter"></i></a></span>
+        <span><a href="https://www.facebook.com" style="color: rgb(66, 103, 178);" target="_blank"><i class="fab fa-facebook-f"></i></a></span>
+        <span><a href="https://www.youtube.com" style="color: rgb(255, 0, 0);" target="_blank"><i class="fab fa-youtube"></i></a></span>
+        <span><a href="https://www.instagram.com" style="color: rgb(225, 48, 108);" target="_blank"><i class="fab fa-instagram"></i></a></span>
+      </div>
+    <p class="lead">Copyright &copy; 2022 Fatih Aydın. All rights reserved</p>
+    <a href="#" class="position-absolute bottom-0 end-0 p-2 width-20">
+      <div>
+        <button class="btn btn-dark" type="button" style = "position:relative; bottom:10.5px; right: 10px;">Back To Top</button>
+      </div>
+
+    </a>
+  </div>
+
+
+</footer>
+
+<style>   a{
+  text-decoration: none;
+}
+.footer{
+  position: fixed;
+  left: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 11%;
+  color: white;
+  text-align: center;
+  background-color: dimgray;
+}
+body {
+  background-image: url("vector-set-of-math-scribble-design-vector-eps-thumbnail.jpg");
+  width: 100%;
+
+}
+.accordion-button.collapsed {
+    color: white;
+    background: rgb(164, 71, 71);
+}
+h6 {
+  text-align: left;
+}
+
+
+</style>
+
+
+
+</html>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

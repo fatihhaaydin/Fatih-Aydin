@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Home</title>
+</head>
+
+<body>
+  
+  <header id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary py-3">
+      <div class="container">
+        <div class="shared">
+          <div class="container">
+              <div class="col-md-6">
+              </div>
+      
+              <div class="col-md-6">
+                <a href="index.html">
+                  <img src="dc17a7235a0f06779198dbc0840dada2.jpeg" width="50">
+                </a>
+              </div>
+          </div>
+      </div>
+        <a class="navbar-brand" href="#">Fatih Aydın</a> <!--Navigation barımı yaparken baya uğraştım. Bootstrapten aldığım navigation barı düzenledim 
+        butonları sağa aldım kendi adımı ve logomu ekledim. Ardından bir adet buton koydum ve onunda konumunu ayarladım-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="AboutMe.html" target="_self" >About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Portfolio.html" target="_self">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                  <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Sign Up
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!--Burada bottstrapten aldığım modalın
+                  butonlarını silerek ve içine kaydolma kısmını ekleyerek bir şeyler yapmaya çalıştım. 
+                  Kaydolma yerine kendi logomu koydum ve butonu yeniledim.-->
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          
+                          <body class="text-center">
+      
+                            <main class="form-signin w-100 m-auto">
+                              <form>
+                                <img class="mb-4" src="dc17a7235a0f06779198dbc0840dada2.jpeg" alt="" width="72" height="57">
+                                <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
+                            
+                                <div class="form-floating">
+                                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                  <label for="floatingInput">Email address</label>
+                                </div>
+                                <div class="form-floating">
+                                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                  <label for="floatingPassword">Password</label>
+                                </div>
+                                <p class="mt-5 mb-3 text-muted">© 2022</p>
+                                <button class="w-100 btn btn-lg btn-secondary" type="submit">Sign up</button>  <!--here I connected my sign up button with the modal. 
+                                  I changed the structure of the modal and content of the sign up  bootstrap model-->
+                              </form>
+                            </main>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+  
+
+
+
+</html>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner"><!--Burada carouselimi oluşturdum ve kendi fotoğraflarımı entegre ettim, Carousellerin üzerine birer adet buton koymaya
+  karar verdim ve bu butonlarıda ilgili sayfalara bağladım-->
+    <div class="carousel-item active">
+        <a href="index.html">
+          <img src="gilbert_strang.jpg" class="d-block w-100" height="400">
+          <div class="carousel-caption d-none d-md-block">
+            <div>
+              <button class="btn btn-dark" type="button">Home</button>
+            </div>
+          </div>
+        </a>
+    </div>
+    
+    <div class="carousel-item" class="col-md-6">
+        <a href="AboutMe.html">
+          <img src="15656704711_00457bd2c9_b_1.jpg" class="d-block w-100" height="400">
+          <div class="carousel-caption d-none d-md-block">
+            <div>
+              <button class="btn btn-dark" type="button">About Me</button>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="carousel-item" class="col-md-6">
+        <a href="Portfolio.html">
+          <img src="maxresdefault (1).jpg" class="d-block w-100" height="400">  <!-- You can click on the photos to go to the relevant page also I used buttons -->
+            <div class="carousel-caption d-none d-md-block">
+              <div>
+                <button class="btn btn-dark" type="button">Portfolio</button>
+              </div>
+            </div>
+        </a>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="box" style="width: 1470px; height: 450px; border: black; background-color: rgb(108, 117, 125); margin: 20px; position: relative; left: 20px; top: 220px;"> <!--Buraya
+bir adet standart box modele bakarak ve biraz üzerinde css kodlarıyla oynayarak bir kutu koydum.-->
+  <p>
+    <h1 style="color: rgb(247, 0, 0); position: relative; right: 20rem;"> Hello welcome to my personal website.</h1>
+         <h5  style="color:white; text-align: center;">   I'm Fatih Aydın who is the MathWorks Professor of Mathematics as of 2011, the first holder of 
+      this faculty chair. I came to MIT upon completing the Ph.D. from UCLA in 1959 under the direction of Peter Henrici. 
+      I received the S.B. from MIT in 1955, and the B.A. 
+      and M.A. as a Rhodes Scholar from Oxford University in 1957. I joined the MIT mathematics faculty in 1962, as a professor in 1970.
+      My research focuses on mathematical analysis, linear algebra and PDEs. 
+      I have written textbooks on linear algebra, computational science, finite elements, wavelets, GPS, 
+      and calculus. My video lectures are on MIT's OpenCourseWare, and I am on the editorial board of numerous journals, 
+      and am the founder of Wellesley-Cambridge Press. My service to the academic community is extensive. I served as President of SIAM,
+       1999-00, Chair of the Joint Policy Board for Mathematics, 1999, Chair of the U.S. National Committee on Mathematics,
+        2002, and member of the Abel Prize Committee, 2003-05. In the Mathematics Department, I was Chair of the Pure Mathematics Committee,
+         1975-79.
+
+      I have received distinctions for my research, service and teaching; among them: the Chauvenet Prize, 1976
+      ; the Award for Distinguished Service, SIAM, 2003; the Graduate School Teaching Award, MIT, 2003; the Von Neumann Prize Medal
+       of the U.S. Assoc. for Computational Mechanics, 2005; the Lester R. Ford Prize, MAA, 2005; the 
+       Franklin and Deborah Tepper Haimo Prize, MAA, 2006; and the Henrici and Su Buchin
+        Prizes of the International Congress of Industrial & Applied Mathematics, 2007. I am a Member of the National Academy of
+         Sciences and a Fellow of the American Academy of Arts & Sciences.
+          I am an Honorary Fellow of Balliol College, Oxford. In December 2019, I was elected to be a foreign member of the Russian
+           Academy of Sciences (RAS), in the section of Applied Mathematics and Computer Science
+           . In 2020 I received the Irwin Sizer Award for the most Significant Improvement to MIT Education by the MIT Graduate
+            Student Council.
+      </h5>
+  
+  
+  </p>
+
+
+</div>
+
+
+
+
+<div class="box" style="width: 1470px; height: 250px; border: black; margin: 20px; position: relative; left: 20px; top: 250px;"></div> <!--Hareketli bir footbarım olduğu
+için kolay incelemeniz için böyle ödev içerisinde birkaç adet boş kutu koydum. Hepsinin iç içe olmasını istemedim-->
+      
+      
+    <footer>
+      <div class="footer bg-secondary">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+          <div class="container"> <!--Footer kısmıma sosyal medya ikonlarımı koydum ve hepsini href koduyla ilgili 
+          ana sayfalara bağladım-->
+            <span><a href="https://www.twitter.com" style="color: rgb(29, 161, 242);" target="_blank"><i class="fab fa-twitter"></i></a></span>
+            <span><a href="https://www.facebook.com" style="color: rgb(66, 103, 178);" target="_blank"><i class="fab fa-facebook-f"></i></a></span>
+            <span><a href="https://www.youtube.com" style="color: rgb(255, 0, 0);" target="_blank"><i class="fab fa-youtube"></i></a></span>
+            <span><a href="https://www.instagram.com" style="color: rgb(225, 48, 108);" target="_blank"><i class="fab fa-instagram"></i></a></span>
+          </div>
+        <p class="lead">Copyright &copy; 2022 Fatih Aydın. All rights reserved</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-2 width-20">
+          <div>
+            <button class="btn btn-dark" type="button" style = "position:relative; bottom:10.5px; right: 10px;">Back To Top</button><!--Back to the Top butonu
+            oluşturdum ve onun konumunu css kodlarıyla düzelttim. Tıklanması halinde yukarıya çıkması için düzenledim-->
+          </div>
+    
+        </a>
+      </div>
+    
+    
+    </footer>
+
+
+
+
+
+    
+<style>   a{
+  text-decoration: none;
+}
+.footer{
+  position: fixed;
+  left: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 11%;
+  color: white;
+  text-align: center;
+  background-color: dimgray;
+}
+body {
+  background-image: url("61775862-math-linear-mathematics-education-circle-background-with-geometrical-plots-formulas-and-calculations.jpeg");
+  width: 100%;
+
+}
+h5 {
+  text-align: left;
+}
+
+</style>
+
+
+    
+  
